@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker App</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fitness Tracker</h1>
+
+    <!-- Section for setting fitness goals -->
+    <section class="goals-section">
+      <h2>Set Your Fitness Goal</h2>
+      <input type="text" id="fitnessGoal" placeholder="Enter your fitness goal">
+      <button onclick="setGoal()">Set Goal</button>
+      <p id="currentGoal"></p>
+    </section>
+
+    <!-- Section for recording workouts -->
+    <section class="workouts-section">
+      <h2>Record Your Workout</h2>
+      <input type="text" id="workoutType" placeholder="Workout type (e.g., Running)">
+      <input type="number" id="workoutDuration" placeholder="Duration (mins)">
+      <input type="date" id="workoutDate">
+      <button onclick="recordWorkout()">Add Workout</button>
+      <ul id="workoutList"></ul>
+    </section>
+
+    <!-- Section for viewing progress -->
+    <section class="progress-section">
+      <h2>Your Workout Progress</h2>
+      <button onclick="viewProgress()">View Progress</button>
+      <div id="progress"></div>
+    </section>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
